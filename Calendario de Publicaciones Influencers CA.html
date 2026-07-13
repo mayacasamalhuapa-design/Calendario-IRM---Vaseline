@@ -1,0 +1,272 @@
+<html data-type="html" data-identifier="9542d395-a23a-4ad3-974d-6d56d493078d" data-title="Calendario de Publicaciones Influencers CA" data-version="3" width="1200" height="800"><head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #ffffff;
+    color: #0d1b3e;
+    padding: 48px 30px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1080px; margin: 0 auto; }
+
+  header {
+    background: linear-gradient(135deg, #1F36C7 0%, #064F89 100%);
+    border-radius: 18px;
+    padding: 46px 40px;
+    color: #fff;
+    margin-bottom: 44px;
+  }
+  #main-title {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  #subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.85;
+    margin-top: 14px;
+    letter-spacing: 0.3px;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 46px;
+    border: 1px solid #E3EAF3;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .stat {
+    flex: 1;
+    min-width: 150px;
+    padding: 24px 20px;
+    text-align: center;
+    border-right: 1px solid #E3EAF3;
+  }
+  .stat:last-child { border-right: none; }
+  .stat .num { font-size: 30px; font-weight: 800; color: #1F36C7; letter-spacing: -1px; }
+  .stat .label { font-size: 12px; color: #6a95b8; margin-top: 6px; text-transform: uppercase; letter-spacing: 1px; }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: #3d4f74;
+  }
+  .legend-group { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 7px; }
+  .dot { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+  .d-gt { background: #064F89; }
+  .d-sv { background: #1F36C7; }
+  .d-hn { background: #3872A1; }
+  .d-cr { background: #6A95B8; }
+  .sep { width: 1px; height: 18px; background: #E3EAF3; }
+
+  .phase {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #1F36C7;
+    margin: 40px 0 6px;
+  }
+  .phase-sub { font-size: 13px; color: #6a95b8; margin-bottom: 18px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #6a95b8;
+    padding: 0 16px 14px;
+    border-bottom: 2px solid #1F36C7;
+  }
+  tbody td {
+    padding: 14px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #EEF2F8;
+    vertical-align: middle;
+  }
+  tbody tr:hover { background: #F6F9FD; }
+
+  .date-cell { font-weight: 800; color: #064F89; white-space: nowrap; font-size: 14px; }
+  .day-cell { color: #9bb2c9; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .name-cell { font-weight: 600; color: #0d1b3e; }
+
+  .star { color: #1F36C7; font-weight: 800; margin-right: 4px; }
+
+  .g {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .g-f { background: #E8EEFB; color: #1F36C7; }
+  .g-m { background: #1F36C7; color: #fff; }
+
+  .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #fff;
+  }
+  .b-gt { background: #064F89; }
+  .b-sv { background: #1F36C7; }
+  .b-hn { background: #3872A1; }
+  .b-cr { background: #6A95B8; }
+
+  .plat { font-size: 12px; color: #3d4f74; font-weight: 600; }
+  .plat-tt { color: #6a95b8; }
+
+  .prio td { background: #F4F7FE; }
+  .prio td:first-child { box-shadow: inset 3px 0 0 #1F36C7; }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 22px;
+    border-top: 1px solid #E3EAF3;
+    text-align: center;
+    font-size: 12px;
+    color: #9bb2c9;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div id="main-title">Calendario de Publicaciones</div>
+      <div id="subtitle">Campaña de Influencers · Centroamérica · 15 julio – 15 septiembre 2026 · Instagram &amp; TikTok</div>
+    </header>
+
+    <div class="stats">
+      <div class="stat"><div class="num">32</div><div class="label">Influencers</div></div>
+      <div class="stat"><div class="num">64</div><div class="label">Contenidos</div></div>
+      <div class="stat"><div class="num">16 / 16</div><div class="label">Mujeres / Hombres</div></div>
+      <div class="stat"><div class="num">4</div><div class="label">Países</div></div>
+      <div class="stat"><div class="num">~9</div><div class="label">Semanas</div></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-group">
+        <span><i class="dot d-gt"></i> Guatemala</span>
+        <span><i class="dot d-sv"></i> El Salvador</span>
+        <span><i class="dot d-hn"></i> Honduras</span>
+        <span><i class="dot d-cr"></i> Costa Rica</span>
+      </div>
+      <div class="sep"></div>
+      <div class="legend-group">
+        <span><i class="g g-f">♀</i> Mujer</span>
+        <span><i class="g g-m">♂</i> Hombre</span>
+      </div>
+      <div class="sep"></div>
+      <span><b class="star">★</b> Prioridad de arranque</span>
+    </div>
+
+    <div class="phase">Ronda 1 — Primer contenido</div>
+    <div class="phase-sub">Arranque priorizado · mezcla de países y géneros · solo días hábiles</div>
+    <table>
+      <thead>
+        <tr><th>Fecha</th><th>Día</th><th>Género</th><th>Influencer</th><th>País</th><th>Plataforma</th></tr>
+      </thead>
+      <tbody>
+        <tr class="prio"><td class="date-cell">15 Jul</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell"><span class="star">★</span>Ile Quiros</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr class="prio"><td class="date-cell">16 Jul</td><td class="day-cell">Jue</td><td><i class="g g-f">♀</i></td><td class="name-cell"><span class="star">★</span>Alejandra Retana</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr class="prio"><td class="date-cell">17 Jul</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell"><span class="star">★</span>EriolTV</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr class="prio"><td class="date-cell">20 Jul</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell"><span class="star">★</span>Reyna Sánchez</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">21 Jul</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Julio Morales</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">22 Jul</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell">Paola Ayala</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">22 Jul</td><td class="day-cell">Mié</td><td><i class="g g-m">♂</i></td><td class="name-cell">Walter Mendoza</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">23 Jul</td><td class="day-cell">Jue</td><td><i class="g g-f">♀</i></td><td class="name-cell">Jana de Oliveira</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">24 Jul</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Alexander Valladares</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">24 Jul</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Katherine Rosales</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">27 Jul</td><td class="day-cell">Lun</td><td><i class="g g-m">♂</i></td><td class="name-cell">Frank Menchaca</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">28 Jul</td><td class="day-cell">Mar</td><td><i class="g g-f">♀</i></td><td class="name-cell">Gigi Garita</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">28 Jul</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Javier Segovia</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">29 Jul</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell">Ana Cruz</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">30 Jul</td><td class="day-cell">Jue</td><td><i class="g g-m">♂</i></td><td class="name-cell">Sergio Solano</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">31 Jul</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Gabriela Triste</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">31 Jul</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Sebas Barcenas</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">03 Ago</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell">Keissy Zumbado</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">04 Ago</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Jose Quintanilla</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">04 Ago</td><td class="day-cell">Mar</td><td><i class="g g-f">♀</i></td><td class="name-cell">Angie Pinzón</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">05 Ago</td><td class="day-cell">Mié</td><td><i class="g g-m">♂</i></td><td class="name-cell">Heber Montoya</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">06 Ago</td><td class="day-cell">Jue</td><td><i class="g g-f">♀</i></td><td class="name-cell">Lindsay Seac</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">06 Ago</td><td class="day-cell">Jue</td><td><i class="g g-m">♂</i></td><td class="name-cell">Josh Valverde</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">07 Ago</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Marcela Cuellar</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">10 Ago</td><td class="day-cell">Lun</td><td><i class="g g-m">♂</i></td><td class="name-cell">Eff Castillo</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">10 Ago</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell">MJ Escobar</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">11 Ago</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Axel Rivera</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat plat-tt">Solo TikTok</td></tr>
+        <tr><td class="date-cell">12 Ago</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell">Leena Bae</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">12 Ago</td><td class="day-cell">Mié</td><td><i class="g g-m">♂</i></td><td class="name-cell">Antony Owen</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">13 Ago</td><td class="day-cell">Jue</td><td><i class="g g-f">♀</i></td><td class="name-cell">Melissa</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">14 Ago</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Francisco Zavala</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">14 Ago</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Chef Roberto Espinal</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+      </tbody>
+    </table>
+
+    <div class="phase">Ronda 2 — Segundo contenido</div>
+    <div class="phase-sub">Mismo orden de prioridad · mezcla de países y géneros · cierre 15 de septiembre</div>
+    <table>
+      <thead>
+        <tr><th>Fecha</th><th>Día</th><th>Género</th><th>Influencer</th><th>País</th><th>Plataforma</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="date-cell">17 Ago</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell">Ile Quiros</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">18 Ago</td><td class="day-cell">Mar</td><td><i class="g g-f">♀</i></td><td class="name-cell">Alejandra Retana</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">18 Ago</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">EriolTV</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">19 Ago</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell">Reyna Sánchez</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">20 Ago</td><td class="day-cell">Jue</td><td><i class="g g-m">♂</i></td><td class="name-cell">Sebas Barcenas</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">21 Ago</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Jana de Oliveira</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">21 Ago</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Jose Quintanilla</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">24 Ago</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell">Katherine Rosales</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">25 Ago</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Josh Valverde</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">25 Ago</td><td class="day-cell">Mar</td><td><i class="g g-f">♀</i></td><td class="name-cell">Melissa</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">26 Ago</td><td class="day-cell">Mié</td><td><i class="g g-m">♂</i></td><td class="name-cell">Heber Montoya</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">27 Ago</td><td class="day-cell">Jue</td><td><i class="g g-f">♀</i></td><td class="name-cell">Paola Ayala</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">27 Ago</td><td class="day-cell">Jue</td><td><i class="g g-m">♂</i></td><td class="name-cell">Julio Morales</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">28 Ago</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Angie Pinzón</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">31 Ago</td><td class="day-cell">Lun</td><td><i class="g g-m">♂</i></td><td class="name-cell">Walter Mendoza</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">31 Ago</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell">Lindsay Seac</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">01 Sep</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Frank Menchaca</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">02 Sep</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell">Keissy Zumbado</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">02 Sep</td><td class="day-cell">Mié</td><td><i class="g g-m">♂</i></td><td class="name-cell">Antony Owen</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">03 Sep</td><td class="day-cell">Jue</td><td><i class="g g-f">♀</i></td><td class="name-cell">Leena Bae</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">04 Sep</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Alexander Valladares</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">04 Sep</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Gabriela Triste</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">07 Sep</td><td class="day-cell">Lun</td><td><i class="g g-m">♂</i></td><td class="name-cell">Javier Segovia</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">08 Sep</td><td class="day-cell">Mar</td><td><i class="g g-f">♀</i></td><td class="name-cell">Gigi Garita</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">09 Sep</td><td class="day-cell">Mié</td><td><i class="g g-m">♂</i></td><td class="name-cell">Axel Rivera</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat plat-tt">Solo TikTok</td></tr>
+        <tr><td class="date-cell">09 Sep</td><td class="day-cell">Mié</td><td><i class="g g-f">♀</i></td><td class="name-cell">MJ Escobar</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">10 Sep</td><td class="day-cell">Jue</td><td><i class="g g-m">♂</i></td><td class="name-cell">Sergio Solano</td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">11 Sep</td><td class="day-cell">Vie</td><td><i class="g g-f">♀</i></td><td class="name-cell">Marcela Cuellar</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">11 Sep</td><td class="day-cell">Vie</td><td><i class="g g-m">♂</i></td><td class="name-cell">Eff Castillo</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">14 Sep</td><td class="day-cell">Lun</td><td><i class="g g-f">♀</i></td><td class="name-cell">Ana Cruz</td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">15 Sep</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Chef Roberto Espinal</td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">15 Sep</td><td class="day-cell">Mar</td><td><i class="g g-m">♂</i></td><td class="name-cell">Francisco Zavala</td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+      </tbody>
+    </table>
+
+    <footer>Propuesta de calendario · 64 contenidos · Mezcla de países y géneros · Instagram &amp; TikTok · Julio – Septiembre 2026</footer>
+  </div>
+
+</body></html>
